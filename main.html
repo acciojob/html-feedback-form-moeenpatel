@@ -1,22 +1,34 @@
-<form>
-  <h2>Feedback Form</h2>
+<!DOCTYPE html>
+<html>
 
-  <label for="name">Name:</label>
-  <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
-
-  <label for="portfolio">Webpage:</label>
-  <input type="url" id="portfolio" name="portfolio" required>
-
+	<head>
+		<link rel="stylesheet" href="style.css">
+	</head>
+<body>
+	<h1>Feedback Form</h1>
+	<form action="/submit" method ="post">
+ 
+  <label for="name">Enter your Name:</label>
+  <input  minlength="3" maxlength="50" type="text" required id="name" name="name" placeholder="Enter your name"><br>
+<br>
+		
+  <label for="portfolio">Enter your portfolio</label>
+  <input type="url" required id="portfolio" name="portfolio" placeholder="Enter your portfolio">
+		<br>
+	<br>
+		
   <label for="favColor">Favorite Color:</label>
-  <select id="favColor" name="favColor">
-    <option value="red">Red</option>
-    <option value="blue">Blue</option>
-    <option value="green">Green</option>
-    <!-- Add more color options as needed -->
-  </select>
+		<input type="color" name="favcolor" id="favcolor">
+		<br>
+		<br>
+  
 
-  <label for="likeness">Likeness (1-100):</label>
+  <label for="likeness">Enter your likeness</label>
   <input type="range" id="likeness" name="likeness" min="1" max="100">
 
-  <input type="submit" value="Submit">
+  <button>Submit</button>
 </form>
+<script type="text/javascript" src="./script.js">
+</script>
+</body>
+</html>
