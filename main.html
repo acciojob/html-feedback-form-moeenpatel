@@ -11,24 +11,27 @@
     <script type="text/javascript" src="./script.js">
 </script>
 	<form>
-		<h1>Feedback Form</h1>
-		<label for="name">Name</label>
-		<input type="text" id="name" name="name" minlength="3" maxlength="50" requred>
+  <h2>Feedback Form</h2>
 
-		<label for="portfolio">Webpage:</label>
-		<input type="url" id="portfolio" name="portfolio" required>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" minlength="3" maxlength="50" required>
 
-		<label for="favcolor">Favorite Color:</label>
-		<select id="favcolor" name="favcolor">
-		<option value="red">Red</option>
-		<option value="green">Green</option>
-		<option value="blue">Blue</option>
-		</select>
-		<label for="likeness">Likeness (1-100):</label>
-		<input type="range" id="likeness" name="likeness" min="1" max="100">
-		<input type="submit" value="submit">
-		
+  <label for="portfolio">Webpage:</label>
+  <input type="url" id="portfolio" name="portfolio" required>
 
+  <label for="favColor">Favorite Color:</label>
+  <select id="favColor" name="favColor">
+    <option value="red">Red</option>
+    <option value="blue">Blue</option>
+    <option value="green">Green</option>
+    <!-- Add more color options as needed -->
+  </select>
+
+  <label for="likeness">Likeness (1-100):</label>
+  <input type="range" id="likeness" name="likeness" min="1" max="100">
+
+  <input type="submit" value="Submit">
+</form>
 </body>
 
 </html>
